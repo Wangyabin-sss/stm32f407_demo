@@ -1,5 +1,5 @@
 ## 2021.7.20
-### 1.IO初始化后该寄存器写零时不会对相应为进行任何操作
+### 1.IO初始化后该寄存器写零时不会对相应位进行任何操作
 ```c
 #define led_write(n) n ? (GPIOF->BSRRL=GPIO_Pin_9 | GPIO_Pin_10):(GPIOF->BSRRH=GPIO_Pin_9 | GPIO_Pin_10)
 ```
