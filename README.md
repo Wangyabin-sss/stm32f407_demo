@@ -3,7 +3,7 @@
 ```c
 #define led_write(n) n ? (GPIOF->BSRRL=GPIO_Pin_9 | GPIO_Pin_10):(GPIOF->BSRRH=GPIO_Pin_9 | GPIO_Pin_10)
 ```
-### 2.总线一般输出配置为开漏(不然容易短路)
+### 2.总线（带上拉电阻）一般输出配置为开漏(不然容易短路)
 ## 2021.7.21
 ### 1.RCC更改时钟HSE_VALUE、PLL_M   (system_stm32f4xx.c stm32f4xx.h)
 ![](.\image\PLL.png)
